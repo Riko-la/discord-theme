@@ -1,0 +1,104 @@
+/**
+ * @name Violet & Noir
+ * @author Riko
+ * @version 1.0.0
+ * @description Anthracite and violet Discord theme optimized for Bunny.
+ * @source https://github.com/Riko-la/discord-theme
+ */
+
+:root {
+  --vn-bg: #202024;
+  --vn-bg-dark: #141417;
+  --vn-bg-side: #1a1a1e;
+  --vn-bg-card: #2a2a2f;
+
+  --vn-purple: #a970ff;
+  --vn-purple-light: #c9a7ff;
+  --vn-purple-dark: #7a49d1;
+
+  --vn-text: #e6e2f0;
+  --vn-text-muted: #9d98ad;
+}
+
+.theme-dark,
+:root {
+  --background-primary: var(--vn-bg);
+  --background-secondary: var(--vn-bg-side);
+  --background-secondary-alt: var(--vn-bg-dark);
+  --background-tertiary: var(--vn-bg-dark);
+
+  --background-floating: var(--vn-bg-dark);
+  --background-accent: var(--vn-bg-card);
+
+  --channeltextarea-background: var(--vn-bg-card);
+
+  --background-modifier-hover: #26262b;
+  --background-modifier-active: #303036;
+  --background-modifier-selected: #303036;
+
+  --text-normal: var(--vn-text);
+  --text-muted: var(--vn-text-muted);
+
+  --header-primary: #f5f0ff;
+  --header-secondary: var(--vn-text-muted);
+
+  --channels-default: var(--vn-text-muted);
+
+  --interactive-normal: var(--vn-text-muted);
+  --interactive-hover: var(--vn-text);
+  --interactive-active: var(--vn-purple-light);
+
+  --brand-experiment: var(--vn-purple);
+  --brand-500: var(--vn-purple);
+  --brand-560: var(--vn-purple-dark);
+
+  --text-link: var(--vn-purple-light);
+  --control-brand-foreground: var(--vn-purple);
+
+  --scrollbar-thin-thumb: var(--vn-purple-dark);
+  --scrollbar-auto-thumb: var(--vn-purple-dark);
+}
+
+/* Selected channels */
+[class*="modeSelected"] {
+  box-shadow: inset 3px 0 0 var(--vn-purple);
+}
+
+/* Server indicator */
+[class*="pill_"] span {
+  background: var(--vn-purple) !important;
+}
+
+/* Buttons */
+[class*="lookFilled"][class*="colorBrand"] {
+  background: var(--vn-purple) !important;
+  color: #000 !important;
+  font-weight: 600;
+}
+
+/* Headers */
+[class*="membersGroup_"],
+[class*="headerText_"] {
+  color: var(--vn-purple) !important;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {
+  background: var(--vn-purple-dark) !important;
+  border-radius: 999px !important;
+}
+
+/* Signature */
+.appMount::after {
+  content: "made by riko";
+  position: fixed;
+  top: 6px;
+  right: 12px;
+  color: var(--vn-purple);
+  font-size: 11px;
+  pointer-events: none;
+  z-index: 9999;
+}
