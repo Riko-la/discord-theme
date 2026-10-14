@@ -1,34 +1,17 @@
-# Violet & Noir Theme
+# theme_bunny
 
-A lightweight Discord theme featuring a dark anthracite color palette combined with elegant violet accents.
-
-Compatible with:
-
-- Vencord
-- BetterDiscord
-- Bunny (Android)
-- Revenge
-- Other Discord clients supporting custom CSS themes
-
----
+A lightweight Discord theme designed specifically for Bunny and compatible with other CSS-based Discord clients.
 
 ## Features
 
-✅ Anthracite dark background
-
-✅ Violet accent color system
-
-✅ Custom styled category headers
-
-✅ Minimal purple scrollbars
-
-✅ Optimized for lower resource usage
-
-✅ Improved readability
-
-✅ Lightweight and performance-friendly
-
-✅ Easy customization through CSS variables
+- Anthracite dark color palette
+- Clean violet accents
+- Improved readability
+- Lightweight and performance-friendly
+- Custom category styling
+- Purple scrollbar styling
+- Mobile-friendly design
+- Bunny optimized
 
 ---
 
@@ -36,50 +19,19 @@ Compatible with:
 
 ### Main Colors
 
-| Color | Hex |
-|---------|---------|
-| Main Background | `#202024` |
-| Sidebar Background | `#1a1a1e` |
-| Primary Violet | `#a970ff` |
-| Light Violet | `#c9a7ff` |
-| Dark Violet | `#7a49d1` |
-| Main Text | `#e6e2f0` |
+| Element | Color |
+|----------|----------|
+| Background | #202024 |
+| Sidebar | #1A1A1E |
+| Primary Accent | #A970FF |
+| Secondary Accent | #C9A7FF |
+| Text | #E6E2F0 |
 
 ---
 
-# Installation
+## Installation
 
-## Vencord
-
-1. Open Discord.
-2. Go to **Settings** → **Vencord** → **Themes**.
-3. Click **Online Themes**.
-4. Add:
-
-```txt
-https://raw.githubusercontent.com/Riko-la/discord-theme/main/VioletNoir.theme.css
-```
-
-5. Enable the theme.
-
----
-
-## BetterDiscord
-
-1. Download the CSS file.
-2. Place it inside:
-
-```txt
-BetterDiscord/themes
-```
-
-3. Open Discord.
-4. Navigate to **Settings** → **Themes**.
-5. Enable **Violet & Noir**.
-
----
-
-## Bunny (Android)
+### Bunny
 
 1. Open Bunny Settings.
 2. Navigate to **Themes**.
@@ -87,70 +39,71 @@ BetterDiscord/themes
 4. Paste:
 
 ```txt
-https://raw.githubusercontent.com/Riko-la/discord-theme/main/VioletNoir.theme.css
+https://raw.githubusercontent.com/Riko-la/discord-theme/main/theme_bunny.css
 ```
 
-5. Install and enable the theme.
-
----
-
-## Revenge
-
-1. Open Revenge.
-2. Go to **Themes**.
-3. Add a remote theme.
-4. Paste the theme URL.
 5. Enable the theme.
 
 ---
 
-# Customization
+### Vencord
 
-You can easily customize the theme colors by editing the variables below:
+1. Open Discord Settings.
+2. Navigate to **Vencord → Themes**.
+3. Add the URL above.
+4. Enable the theme.
+
+---
+
+### BetterDiscord
+
+1. Download `theme_bunny.css`.
+2. Place it inside your BetterDiscord themes folder.
+3. Enable it from Settings → Themes.
+
+---
+
+### Revenge
+
+1. Open Revenge Settings.
+2. Navigate to Themes.
+3. Add the theme URL.
+4. Enable it.
+
+---
+
+## Customization
+
+You can customize the colors by editing the variables inside the CSS file:
 
 ```css
 :root {
-  --on-noir: #202024;
-  --on-violet: #a970ff;
-  --on-violet-clair: #c9a7ff;
-  --on-violet-fonce: #7a49d1;
+  --vn-bg: #202024;
+  --vn-purple: #a970ff;
+  --vn-purple-light: #c9a7ff;
+  --vn-purple-dark: #7a49d1;
 }
 ```
 
 ---
 
-# Performance Notes
+## License
 
-This theme includes several optimizations:
+Licensed under the MIT License.
 
-- Disabled animations
-- Disabled transitions
-- Removed backdrop blur effects
-- Reduced GPU usage
-- Lightweight rendering configuration
-
-Designed for smoother performance on both desktop and mobile devices.
+See the LICENSE file for more information.
 
 ---
 
-# Author
+## Author
 
 **Riko**
 
-Discord:
-https://discord.com/users/757992848078405702
+Discord ID: `757992848078405702`
 
-Version: **1.0.0**
+GitHub:
+https://github.com/Riko-la
 
 ---
 
-## License
-
-This theme is provided free of charge for personal use.
-
-You may:
-- Use
-- Modify
-- Share
-
-Please keep author credits when redistributing.
+Made with 💜 for the Bunny community.
